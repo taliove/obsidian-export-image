@@ -40,7 +40,7 @@ export class SettingRenderer {
 
     target[lastKey] = value;
     await this.plugin.saveSettings();
-    await this.render(undefined);
+    // await this.render(undefined);
   }
 
   async render(settingItems: SettingItem[] | undefined): Promise<void> {
