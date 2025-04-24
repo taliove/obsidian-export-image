@@ -4,6 +4,7 @@ declare type FileFormat = 'png0' | 'png1' | 'jpg' | 'pdf' | 'webp';
 declare type ISettings = {
   width?: number;
   showFilename: boolean;
+  fontSize?: 'small' | 'medium' | 'large';
   resolutionMode: ResolutionMode;
   format: FileFormat;
   showMetadata: boolean;

@@ -161,7 +161,7 @@ const Target = forwardRef<
       >
         <Watermark {...watermarkProps}>
           <div
-            className='markdown-preview-view markdown-rendered export-image-preview-container'
+            className={`markdown-preview-view markdown-rendered export-image-preview-container ${setting.fontSize ? `export-image-font-${setting.fontSize}` : 'export-image-font-medium'}`}
             style={{
               width: `${setting.width}px`,
               transition: 'width 0.25s',
@@ -190,7 +190,10 @@ const Target = forwardRef<
                   </div>
                 </div>
               )}
-            <div ref={contentRef} className={`export-image-split-${setting.split.mode} export-image-markdown`}></div>
+            <div 
+              ref={contentRef} 
+              className={`export-image-split-${setting.split.mode} export-image-markdown`}
+            ></div>
           </div>
         </Watermark>
         {setting.authorInfo.show

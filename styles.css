@@ -284,3 +284,25 @@ If your plugin does not need CSS, delete this file.
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+/* 字体大小控制 */
+
+.export-image-font-small {
+  --font-text-size: 100%;
+  --inline-title-size: 100%;
+}
+
+.export-image-font-medium {
+  --font-text-size: 120%;
+  --inline-title-size: 120%;
+}
+
+.export-image-font-large {
+  --font-text-size: 140%;
+  --inline-title-size: 140%;
+}
+
+.export-image-font-x-large {
+  --font-text-size: 160%;
+  --inline-title-size: 160%;
+}

@@ -97,6 +97,17 @@ export const createSettingConfig = async (app: App): Promise<SettingItem[]> => {
       type: 'toggle',
     },
     {
+      id: 'fontSize',
+      label: L.fontSize(),
+      type: 'dropdown',
+      options: [
+        { value: 'small', text: L.fontSizeSmall() },
+        { value: 'medium', text: L.fontSizeMedium() },
+        { value: 'large', text: L.fontSizeLarge() },
+        { value: 'x-large', text: L.fontSizeExtraLarge() },
+      ],
+    },
+    {
       id: 'resolutionMode',
       label: L.setting.resolutionMode.label(),
       description: L.setting.resolutionMode.description(),

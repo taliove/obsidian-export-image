@@ -85,6 +85,26 @@ type RootTranslation = {
 	 */
 	imageWidth: string
 	/**
+	 * F​o​n​t​ ​S​i​z​e
+	 */
+	fontSize: string
+	/**
+	 * S​m​a​l​l
+	 */
+	fontSizeSmall: string
+	/**
+	 * M​e​d​i​u​m
+	 */
+	fontSizeMedium: string
+	/**
+	 * L​a​r​g​e
+	 */
+	fontSizeLarge: string
+	/**
+	 * E​x​t​r​a​ ​L​a​r​g​e
+	 */
+	fontSizeExtraLarge: string
+	/**
 	 * E​x​p​o​r​t​ ​t​o​ ​i​m​a​g​e
 	 */
 	exportImage: string
@@ -526,6 +546,26 @@ export type TranslationFunctions = {
 	 * Image Width
 	 */
 	imageWidth: () => LocalizedString
+	/**
+	 * Font Size
+	 */
+	fontSize: () => LocalizedString
+	/**
+	 * Small
+	 */
+	fontSizeSmall: () => LocalizedString
+	/**
+	 * Medium
+	 */
+	fontSizeMedium: () => LocalizedString
+	/**
+	 * Large
+	 */
+	fontSizeLarge: () => LocalizedString
+	/**
+	 * Extra Large
+	 */
+	fontSizeExtraLarge: () => LocalizedString
 	/**
 	 * Export to image
 	 */

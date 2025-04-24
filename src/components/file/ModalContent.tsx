@@ -21,6 +21,17 @@ const formSchema: FormSchema<ISettings> = [
     type: 'number',
   },
   {
+    label: L.fontSize(),
+    path: 'fontSize',
+    type: 'select',
+    options: [
+      { text: L.fontSizeSmall(), value: 'small' },
+      { text: L.fontSizeMedium(), value: 'medium' },
+      { text: L.fontSizeLarge(), value: 'large' },
+      { text: L.fontSizeExtraLarge(), value: 'x-large' },
+    ],
+  },
+  {
     path: 'padding.top',
     label: L.setting.padding.top(),
     desc: L.setting.padding.description(),
