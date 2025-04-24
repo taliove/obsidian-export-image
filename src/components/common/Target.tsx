@@ -164,8 +164,8 @@ const Target = forwardRef<
             className={`markdown-preview-view markdown-rendered export-image-preview-container ${setting.fontSize ? `export-image-font-${setting.fontSize}` : 'export-image-font-medium'}`}
             style={{
               width: `${setting.width}px`,
+              padding: '0',
               transition: 'width 0.25s',
-              padding: `${setting.padding.top}px ${setting.padding.right}px ${setting.padding.bottom}px ${setting.padding.left}px`,
             }}
           >
             {setting.showFilename && (
@@ -193,6 +193,10 @@ const Target = forwardRef<
             <div 
               ref={contentRef} 
               className={`export-image-split-${setting.split.mode} export-image-markdown`}
+              style={{
+                width: `${setting.width}px`,
+                padding: `${setting.padding.top}px ${setting.padding.right}px ${setting.padding.bottom}px ${setting.padding.left}px`,
+              }}
             ></div>
           </div>
         </Watermark>
